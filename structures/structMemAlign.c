@@ -2,7 +2,7 @@
 
 struct A{
 	char a;  //1
-	int b;  //
+	int b;  //4
 	double c;  //8
 };
 
@@ -12,13 +12,13 @@ struct B{
 	double c;  //8
 	int b;  // 4
 	
-};
+}__attribute__((packed));
 
 struct C{
+	int b;  // 4
 	char a;  //1
-	double c;  //8
-	int b;  // 4	
-}__attribute__((packed));
+	double c;  //8	
+};
 
 int main()
 {

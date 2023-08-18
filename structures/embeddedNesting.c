@@ -8,7 +8,8 @@ typedef struct Aeroplane{
 	struct Engine{
 		char type[50];
 		int power;
-	}engine1, engine2;
+	};
+	struct Engine engine1, engine2;
 } Aeroplane;
 
 int main()
